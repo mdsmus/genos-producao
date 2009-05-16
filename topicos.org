@@ -1,0 +1,21 @@
+Lista de tópicos para apresentação no fórum PPGMUS
+
+* extensão
+** produtividade usando linux
+** produtividade editando partituras
+** composição eletroacústica
+** estúdio com software livre
+** produtividade em pesquisa
+*** latex
+*** controle de versão
+* pesquisa
+** rameau
+*** análise harmônica
+*** musicologia computacional
+** goiaba
+* ferramentas
+** wiki
+** repositórios
+*** documentos
+*** controle de versão
+** controle de tarefas
