@@ -7,15 +7,45 @@ Lista de tópicos para apresentação no fórum PPGMUS
 ** estúdio com software livre
 ** produtividade em pesquisa
 *** latex
+    - não dar aula. só mostrar
 *** controle de versão
 * pesquisa
 ** rameau
 *** análise harmônica
+    - algoritmos determinísticos (pardo, temperley)
+    - algoritmos estatísticos (que precisam de treinamento)
+      - falar o que é rede neural
 *** musicologia computacional
 ** goiaba
+*** 
 * ferramentas
 ** wiki
 ** repositórios
 *** documentos
 *** controle de versão
 ** controle de tarefas
+** handbook
+   - ver número de páginas
+
+* idéias de pedro
+** 3 minutos iniciais para falar
+   - pós-doutorado
+   - apresentações internacionais
+   - cursos
+   - apoio a eventos e pesquisa
+   - listar as pessoas que participaram nos 2 anos. grazieno por exemplo
+   - codificação
+   - linguagem para síntese sonora
+   - dinheiro fapesb
+** falar o mínimo, mostrar o máximo
+** oficina
+   - horário para mexer no computador
+   - levar várias máquinas, gravar coisas
+* reler
+  - anppom
+  - sbcm
+  - icmc (slides)
+
+* convites
+  - g3
+  - toda a escola
