@@ -1,0 +1,205 @@
+\documentclass{beamer}
+\usepackage{beamerthemesplit}
+\usepackage{graphicx,url}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multimedia}
+
+\mode<presentation>
+{
+  \usetheme{Ilmenau}
+  \setbeamercovered{transparent}
+}
+
+\newcommand{\eng}[1]{\textit{#1}}
+\newcommand{\obra}{\textit{Em torno da romã}}
+\newcommand{\goiaba}{\textit{Goiaba}}
+\newcommand{\redmark}[1]{\textcolor{red}{#1}}
+\newcommand{\graymark}[1]{\textcolor{gray}{#1}}
+\newcommand{\tocar}{\textcolor{blue}{$\blacktriangleright$}}
+
+\title{Produção do Genos: Pesquisa, extensão, ferramentas}
+\author{Genos --- Grupo de pesquisa em teoria, composição e computação musical}
+\date{22 de maio de 2009}
+
+\logo{\includegraphics[scale=.15]{logo-genos}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{O Genos}
+
+\frame{
+  \frametitle{Membros}
+  \begin{itemize}
+  \item Prof. Dr. Pedro Kröger (Pós doutorando)
+  \item Marcos di Silva (Doutorando)
+  \item Givaldo de Cidra (Graduando)
+  \item Alexandre Passos (Mestrando em computação---Unicamp)
+  \item Cristiano Figueiró (Doutorando)
+  \item Guilherme Bertissolo (Doutorando)
+  \item Prof. Dr. Amaro Borges (UFSM)
+  \item Natanael de Souza Ourives (Graduando)
+  \item Rodrigo Souto (Graduando em ciência da computação)
+  \item Lucas Prado Melo (Graduando em ciência da computação)
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Realizações}
+  \begin{itemize}
+  \item 15 Cursos de extensão de 2007.2 a 2009.1:
+
+    Csound, Pure Data, Composição Eletroacústica, Lilypond, Linux,
+    Ferramentas Computacionais, \LaTeX, Áudio Básico, Recursos
+    Musicais Utilizando Softwares Livres, Trilha sonora para cinema
+    (em andamento)
+  \item Pesquisas
+    \begin{itemize}
+    \item Metalinguagem para síntese sonora (XML e Lisp)
+    \item Codificação para estruturas musicais
+    \item Análise automática de harmonia (Rameau)
+    \item Musicologia computacional
+    \item Contornos para composição (Goiaba)
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Apresentações em eventos}
+  \begin{itemize}
+  \item International Computer Music Conference --- ICMC 2008
+  \item ANPPOM 2006 e 2008
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Mais ítens sobre produção}
+  \begin{itemize}
+  \item Projeto FAPESB 2007/2008 --- R\$ 29.000,00
+  \item Pós-doutorado de Pedro Kröger, no CCRMA, da Stanford
+    University (San Francisco, EUA)
+  \item Apoio ao Encontro Nacional de Compositores Universitários ---
+    Encun 2008
+  \end{itemize}
+}
+
+\section{Pesquisa}
+
+\subsection{Rameau}
+
+\frame{
+  \frametitle{Rameau: um sistema para análise automática de harmonia}
+}
+
+\subsection{Goiaba}
+
+\frame{
+  \frametitle{Contornos em Música}
+  \begin{figure}
+    \centering
+    \includegraphics{5a-sinfonia}
+  \end{figure}
+
+  \href{run:audio/5a-sinfonia.ogg}{\tocar}
+
+  \begin{figure}
+    \centering
+    \includegraphics[scale=1.4]{c-3120-simples}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Semelhança e possível coerência}
+  \begin{figure}
+    \centering
+    \includegraphics{ly-3120-5a-sinfonia}
+    \hspace{1em}
+    \includegraphics[scale=1.4]{c-3120-simples}
+  \end{figure}
+
+  \vspace{-5em}
+  \href{run:audio/ly-3120-5a-sinfonia.ogg}{\tocar}
+}
+
+\frame{
+  \frametitle{Expansão para outros elementos musicais}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=.9]{chord-densities-in-time}
+    \hspace{1em}
+    \includegraphics[scale=.9]{dynamics-in-time}
+    \hspace{1em}
+    \includegraphics[scale=1]{c-1023}
+  \end{figure}
+  \vspace{-2em}
+
+  \href{run:audio/chord.ogg}{\tocar}
+  \href{run:audio/dynamics.ogg}{\tocar}
+}
+
+\frame{
+  \frametitle{Representações de contornos}
+  \begin{itemize}
+  \item Representação simbólica
+
+    Contorno: Z(2 0 3 1)
+  \item Representação gráfica
+    \begin{figure}
+      \centering
+      \includegraphics[scale=1.5]{c-2031}
+    \end{figure}
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Representação de operações}
+  \begin{itemize}
+  \item Retrógrado de X(1 2 3):\\
+    $retr(X(1\;2\;3))=Y(3\;2\;1)$
+  \item Transposição de X(1 2 3) com fator 2: $transp(X(1\;2\;3)\;2)=W(3\;4\;5)$
+  \item Concatenação de operações:
+    $transp(retr(inv(rot(X(1\;2\;3))\;2))\;3)=K(6\;4\;5)$
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Goiaba}
+
+  Goiaba---Software para processamento de contornos musicais
+}
+
+\section{Ferramentas}
+
+\frame{
+  \frametitle{Linux: sistema operacional de alta produtividade}
+}
+
+\frame{
+  \frametitle{Lilypond: produtividade editando partituras}
+}
+
+\frame{
+  \frametitle{\LaTeX: produtividade com textos acadêmicos}
+}
+
+\subsection{Integração do grupo via web}
+
+\frame{
+  \frametitle{Ferramentas web}
+  \begin{itemize}
+  \item Wiki
+  \item Repositório de arquivos
+  \item Repositório de projetos (controle de versão)
+  \item Sistema de gerenciamento de tarefas
+  \end{itemize}
+}
+
+\subsection{Criação de estúdio com software livre}
+
+\frame{
+  \frametitle{Áudio e software livre}
+}
+
+\end{document}
