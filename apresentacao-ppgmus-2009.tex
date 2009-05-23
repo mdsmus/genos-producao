@@ -94,12 +94,38 @@
 
 \frame{
   \frametitle{Rameau: um sistema para análise automática de harmonia}
+  \framesubtitle{Funcionalidades}
+  
   \begin{itemize}
-  \item Benchmarking de algoritmos
-  \item Expansão de algoritmos
+  \item Identificação de acordes
+  \item Análise harmônica funcional com romanos
+  \item Identificação automática de notas melódicas
+  \item Funcionalidade musicológica básica
+    \begin{itemize}
+    \item cadências
+    \item cruzamento de vozes
+    \end{itemize}
+  \item Entrada e saída em Lilypond
   \end{itemize}
 }
 
+\frame{
+  \frametitle{Rameau: um sistema para análise automática de harmonia}
+  \framesubtitle{Interfaces}
+  \begin{itemize}
+  \item Linha de comando
+  \item Web
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Rameau: um sistema para análise automática de harmonia}
+  \framesubtitle{Problemas}
+  \begin{itemize}
+  \item Segmentação
+  \item Encontrar a tonalidade (regiões)
+  \end{itemize}
+}
 \frame{
   \frametitle{Segmentação (fácil)}
   \framesubtitle{segmentando a peça em acordes}
@@ -113,8 +139,15 @@
 }
 
 \frame{
-  \frametitle{Saída do Rameau}
-  \includegraphics[scale=.6]{chorale1}
+  \frametitle{Saída do Rameau (identificação de acordes)}
+  \hspace{-3em}
+  \includegraphics[scale=.45]{chord}
+}
+
+\frame{
+  \frametitle{Saída do Rameau (análise funcional com romanos)}
+  \hspace{-6em}
+  \includegraphics[scale=.6]{roman}
 }
 
 \frame{
@@ -166,8 +199,7 @@
 
 \frame{
   \frametitle{Rameau new generation}
-  Toolkit para análise musical
-
+  Toolkit para análise musical a partir do Humdrum
 }
 \subsection{Goiaba}
 
